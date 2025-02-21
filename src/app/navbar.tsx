@@ -6,11 +6,11 @@ export default function NavBar() {
   return (
     <nav
       className="
-        mx-auto
+         mx-auto
         mt-[15px]
         w-full
-        max-w-[425px]
-        h-[48px]
+        max-w-[320px] sm:max-w-[425px]
+        h-[40px] sm:h-[48px]
         bg-white
         border
         border-gray-300
