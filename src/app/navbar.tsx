@@ -32,8 +32,7 @@ export default function NavBar() {
         />
         <span
           className="
-            text-sm
-            sm:text-base
+            text-xs sm:text-sm
             font-semibold
             leading-none
           "
