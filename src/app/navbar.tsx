@@ -6,7 +6,8 @@ export default function NavBar() {
   return (
     <nav
       className="
-         mx-auto
+        static
+        mx-auto
         mt-[15px]
         w-full
         max-w-[320px] sm:max-w-[425px]
@@ -23,20 +24,14 @@ export default function NavBar() {
         sm:gap-[22px]
       "
     >
-      {/* Logo + “Cap@UVA” => single clickable link to home page */}
+      {/* Logo + “Cap@UVA” clickable link */}
       <Link href="/" className="flex items-center gap-[10px]">
         <img
           src="/logo.png"
           alt="Cap@UVA Logo"
           className="h-[30px] w-[30px]"
         />
-        <span
-          className="
-            text-xs sm:text-sm
-            font-semibold
-            leading-none
-          "
-        >
+        <span className="text-xs sm:text-sm font-semibold leading-none">
           Cap@UVA
         </span>
       </Link>
@@ -44,11 +39,9 @@ export default function NavBar() {
       {/* GitHub Link */}
       <a
         href="https://github.com/shivpatel0812/Building_Cap_Track"
-        className="
-          text-xs
-          sm:text-sm
-          hover:underline
-        "
+        className="text-xs sm:text-sm hover:underline"
+        target="_blank"
+        rel="noopener noreferrer"
       >
         GitHub
       </a>
@@ -56,37 +49,31 @@ export default function NavBar() {
       {/* Contact Us Link */}
       <a
         href="/contact"
-        className="
-          text-xs
-          sm:text-sm
-          hover:underline
-          
-        "
+        className="text-xs sm:text-sm hover:underline"
       >
         Contact Us
       </a>
 
       {/* Sign Up Button */}
-
       <a
         href="https://form.typeform.com/to/ydXMYRhY"
         target="_blank"
         rel="noopener noreferrer"
         className="inline-block"
-        >
-      <button
-        className="
-          bg-uva-orange
-          text-white
-          px-3
-          py-1
-          rounded-[5px]
-          text-xs
-          sm:text-sm
-        "
       >
-        Sign Up
-      </button>
+        <button
+          className="
+            bg-uva-orange
+            text-white
+            px-3
+            py-1
+            rounded-[5px]
+            text-xs
+            sm:text-sm
+          "
+        >
+          Sign Up
+        </button>
       </a>
     </nav>
   );

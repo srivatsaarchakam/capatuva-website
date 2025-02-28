@@ -221,9 +221,28 @@ export default function HomePage() {
       {/* End of containers */}
 
       {/* FOOTER */}
-      <footer className="mt-10 py-2 text-center text-sm text-gray-500">
-        © {new Date().getFullYear()} Cap@UVA. All rights reserved.
+      <footer className="py-4 text-center text-sm text-gray-500">
+          {/* “In partnership with” + logos on one line */}
+          <div className="mt-5 mb-8 flex items-center justify-center">
+            <span className="mr-2">In partnership with</span>
+            <img
+              src="/datasci.png"
+              alt="UVA Data Science"
+              className="inline-block h-10 mx-2"
+            />
+            <img
+              src="/rec.png"
+              alt="UVA Recreation"
+              className="inline-block h-10 mx-2"
+            />
+          </div>
+
+          {/* Copyright */}
+          <div>
+            © {new Date().getFullYear()} Cap@UVA. All rights reserved.
+          </div>
       </footer>
     </main>
   );
 }
+
