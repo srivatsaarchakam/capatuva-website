@@ -224,7 +224,7 @@ export default function HomePage() {
       <footer className="py-4 text-center text-sm text-gray-500">
           {/* “In partnership with” + logos on one line */}
           <div className="mt-5 mb-8 flex items-center justify-center">
-            <span className="mr-2">In partnership with</span>
+            <span className="mr-2">partnership with</span>
             <img
               src="/datasci.png"
               alt="UVA Data Science"
